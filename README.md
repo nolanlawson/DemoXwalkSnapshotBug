@@ -1,7 +1,7 @@
 Demo Crosswalk snapshot bug
 -------
 
-Demo test case for a Crosswalk bug causing us to be unable to take snapshots.
+Demo test case for [a Crosswalk bug](https://crosswalk-project.org/jira/browse/XWALK-4206) causing us to be unable to take snapshots.
 
 This app has three flavors:
 
