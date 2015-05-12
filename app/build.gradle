@@ -58,6 +58,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
 
-    withCrosswalkArmv7Compile 'org.xwalk:xwalk_core_library_beta:11.40.277.1'
-    withCrosswalkX86Compile 'org.xwalk:xwalk_core_library_beta:11.40.277.1'
+    withCrosswalkArmv7Compile 'org.xwalk:xwalk_core_library_beta:14.43.343.3@aar'
+    withCrosswalkX86Compile 'org.xwalk:xwalk_core_library_beta:14.43.343.3@aar'
 }

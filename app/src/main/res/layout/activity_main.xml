@@ -1,19 +1,60 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context=".MainActivity">
 
+  <TextView
+    android:id="@+id/text_using_crosswalk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/baby_bunny"/>
+  <Button
+    android:id="@+id/button_show_webview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Show WebView"
+    />
+
+  <Button
+    android:id="@+id/button_show_snapshot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button_show_webview"
+    android:text="Show snapshot"
+    />
+
+  <Button
+    android:id="@+id/button_take_snapshot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button_show_snapshot"
+    android:text="Take snapshot"
+    />
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/button_take_snapshot"
+    android:layout_below="@+id/text_using_crosswalk"
+    >
 
     <com.nolanlawson.demo.MyWebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webview"
-        />
+      android:id="@+id/webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
 
-</FrameLayout>
+    <ImageView
+      android:id="@+id/image_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+  </FrameLayout>
+
+
+
+</RelativeLayout>

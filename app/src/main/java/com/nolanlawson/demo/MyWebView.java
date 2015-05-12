@@ -14,7 +14,6 @@ public class MyWebView extends AbstractWebView {
   }
 
   public void onPageFinished() {
-    setBackgroundColor(Color.TRANSPARENT);
-    setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+    // do nothing
   }
 }
